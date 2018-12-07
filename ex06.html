@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <button type="button" id="clicar1">Amostra</button> 
+    <button type="button" id="clicar2">esconde</button> 
+
+    <div id="texto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex diam, efficitur sit amet pharetra ac, maximus a mi. Etiam pellentesque mi eu risus dictum, sit amet ullamcorper odio lacinia. Nulla facilisi. Vestibulum rhoncus urna at ex interdum consectetur. Pellentesque lacus dui, pharetra vel ultricies sit amet, sollicitudin non augue. Nunc elementum quam velit, quis fermentum neque convallis ut. Vivamus pretium facilisis elit, sed semper lacus varius a. Vivamus vel eros dictum, aliquam enim sit amet, ullamcorper sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus ac risus auctor elit convallis auctor eget eget magna.
+
+            Nam ac dolor facilisis, finibus turpis quis, eleifend mi. Aliquam eu efficitur nulla, nec aliquam felis. Suspendisse ac justo et lorem accumsan gravida. Nullam gravida erat dignissim viverra molestie. Integer id facilisis nunc. Mauris feugiat velit justo, vitae pharetra urna congue non. Nunc quis est feugiat felis fermentum posuere in vel eros. Proin eu diam non nisl mollis porta. Donec auctor fermentum erat sit amet accumsan. Sed ac porta lorem. Etiam sit amet rhoncus lorem.
+            
+            Duis nibh ligula, consequat et leo in, cursus pellentesque ante. Proin interdum odio augue, in euismod ligula pulvinar ac. Pellentesque eu posuere elit, quis facilisis mauris. Vivamus lacus dolor, ullamcorper ut metus id, aliquet cursus elit. Donec quis commodo metus. Sed pharetra lacus ac ipsum accumsan mattis. Nunc feugiat lorem a ex sodales, et scelerisque sem rutrum. Praesent et erat sit amet ex finibus facilisis. Aenean vel facilisis ex. Phasellus vel lacus et arcu cursus sodales. Duis scelerisque ut magna eget porta. Donec malesuada metus id pretium sodales. Fusce nec porta neque.
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#clicar1').click(function() {
+                $('#texto').slideDown(10000);
+            });
+            $('#clicar2').click(function() {
+                $('#texto').slideUp(10000);
+            });
+        });
+    </script>
+</body>
+</html>

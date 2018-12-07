@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+        <input type="nome" name="nome" id="nome1" placeholder="nome">
+        <button type="button" id="clicar">Clicar</button> 
+        <ul id="dig">
+
+        </ul>
+
+    <script>
+        $(document).ready(function() {
+            $('#clicar').click(function() {
+                var valor = $.trim($('#nome1').val());
+                if(valor == '') {
+                    alert('Preencha todos os campos');
+                } else {
+                    $('#dig').append('<li>' + valor + '</li>');
+                    $('#nome1').val('');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,13 @@
+function dig() {
+    var nom = document.getElementById("nome").value;
+    var tex = document.getElementById("email2").value;
+    
+    
+       
+
+        document.getElementById("lista").innerHTML += item;
+
+        document.getElementById("nome").value = "";
+        document.getElementById("email2").value = "";
+    }
+}

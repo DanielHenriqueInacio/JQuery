@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" name="nome2" id="nome" placeholder="Nome">
+        <input type="email" name="email" id="email2" placeholder="Email">
+        <button type="button" id="bot">Clicar</button> 
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+            </tr>
+            <tbody id="lista">
+
+            </tbody>
+
+        </table>
+
+    <script>
+        $(document).ready(function() {
+            $('#bot').click(function() {
+               var nome = $('#nome').val();
+               var email = $('#email2').val();
+               if(nome == "" || email == "") {
+                    alert("Preencha todos os campos");
+                }else{
+                    var item = "<tr>"; 
+                        item += "<td>" + nome + "</td>"
+                        item += "<td>" + email + "</td>"
+                        item += "</tr>"
+                    $('#lista').append(item);
+                    $('#nome, #email2').val('')
+                }
+            });
+        });
+    </script>
+</body>
+</html>
